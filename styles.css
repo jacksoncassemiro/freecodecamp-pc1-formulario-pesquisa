@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/736x/ef/17/38/ef1738599330c190faca45d115652ed6.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#title,
+#description,
+#survey-form {
+  max-width: 400px;
+  min-width: 250px;
+}
+
+#title,
+#description {
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}
+
+#title {
+  padding-bottom: 2px;
+}
+
+#description {
+  font-style: italic;
+  padding-top: 2px;
+}
+
+#survey-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  margin-top: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+  width: inherit;
+  min-height: inherit;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  margin-top: 25px;
+  background-color: blue;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+label[for*="item"] {
+  margin: 5px 0;
+}
+
+label[for="comments"] {
+  margin-top: 15px;
+}
+
+p {
+  margin-bottom: 0;
+}

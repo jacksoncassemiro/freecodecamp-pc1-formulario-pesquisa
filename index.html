@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário de teste</title>
+</head>
+
+<body>
+
+    <h1 id="title">Formulário de teste</h1>
+    <p id="description">Essa é uma descrição base do formulário para aprovação.</p>
+    <form id="survey-form" method="post">
+
+        <label id="name-label" for="name">Nome:
+            <input id="name" name="nome" type="text" placeholder="João Silva" required>
+        </label>
+
+        <label id="email-label" for="email">Email:
+            <input id="email" name="email" type="email" placeholder="exemplo@email.com" required></label>
+
+        <label id="number-label" for="number">Idade:
+            <input id="number" name="number" type="number" min="17" max="120" placeholder="18">
+        </label>
+
+        <label for="dropdown">Frequência de retorno:
+            <select id="dropdown">
+                <option value="">escolha uma opção</option>
+                <option value="1">Frequente</option>
+                <option value="2">Moderado</option>
+                <option value="3">Baixo</option>
+            </select>
+        </label>
+
+        <p>Escolha uma opção:</p>
+        <label for="item-crianca">
+            <input id="item-crianca" type="radio" name="nivel" value="criança"> Criança</label>
+
+        <label for="item-adolescente">
+            <input id="item-adolescente" type="radio" name="nivel" value="adolescente">
+            Adolescente</label>
+
+        <label for="item-adulto">
+            <input id="item-adulto" type="radio" name="nivel" value="adulto"> Adulto</label>
+
+        <p>Possui algum esporte favorito?</p>
+        <label for="item-futebol">
+            <input type="checkbox" id="item-futebol" name="item-futebol" value="item-futebol">
+            Futebol</label>
+        <label for="item-correr">
+            <input type="checkbox" id="item-correr" name="item-correr" value="item-correr">
+            Correr</label>
+            
+        <label for="item-escalar">
+            <input type="checkbox" id="item-escalar" name="item-escalar" value="item-escalar">
+            Escalar</label>
+
+        <label for="comments">Comentário: <textarea id="comments" name="comments" rows="3"></textarea></label>
+        <input type="submit" value="Enviar" id="submit">
+
+    </form>
+
+</body>
+
+</html>
